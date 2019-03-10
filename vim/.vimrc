@@ -1,3 +1,6 @@
+" Some of the configurations are derived from
+" https://github.com/yangyangwithgnu/use_vim_as_ide/blob/master/.vimrc
+" with CC0 1.0 Universal as the license.
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
