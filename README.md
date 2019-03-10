@@ -31,3 +31,7 @@ I made some changes for embedded development.
 
 # License
 Please check the LICENSE file.
+
+# Contributing
+It's welcome to contribute your idea or patches to the project.
+If you'd like to keep your copyright, please state it on top of the file.
