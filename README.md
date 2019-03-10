@@ -7,7 +7,13 @@ edev provides the scripts to deploy and configure the following tools on your PC
 
 # How to use edev
 ## Prerequisite
-TBD
+In theory, it should work on the OS derived from debian. The requirement for the OS:
+- Ubuntu 16.04 and above
+- Debian 9 and above
+
+Tested on the following OS
+- Ubuntu 16.04
+- Debian 9.7 (Linux on Windows subsystem)
 
 ## Deploy all the tools and configurations
 To delpy all, it's quite easy
