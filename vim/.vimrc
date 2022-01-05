@@ -41,12 +41,14 @@ Plugin 'mileszs/ack.vim'
 Plugin 'dyng/ctrlsf.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
-Plugin 'fholgado/minibufexpl.vim'
+"Plugin 'fholgado/minibufexpl.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/syntastic'
 Plugin 'gcmt/wildfire.vim'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'suan/vim-instant-markdown'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 " colors
 Plugin 'tomasr/molokai'
@@ -100,14 +102,18 @@ nnoremap <Leader>< <C-w><
 " Jump to the window on the right side
 nnoremap <Leader>lw <C-W>l
 nnoremap <Leader><C-l> <C-W>l
+nnoremap <Leader><C-l> <C-W>l
 " Jump to the window on the left side
 nnoremap <Leader>hw <C-W>h
+nnoremap <Leader><C-h> <C-W>h
 nnoremap <Leader><C-h> <C-W>h
 " Jump to the window above
 nnoremap <Leader>kw <C-W>k
 nnoremap <Leader><C-k> <C-W>k
+nnoremap <Leader><C-k> <C-W>k
 " Jump to the window below
 nnoremap <Leader>jw <C-W>j
+nnoremap <Leader><C-j> <C-W>j
 nnoremap <Leader><C-j> <C-W>j
 
 " Incremental search
@@ -147,7 +153,7 @@ set cursorcolumn
 set hlsearch
 
 " Font
-set guifont=DejaVuSansMono\ 14
+set guifont=Hack\ Regular\ 14
 
 " No wrap
 set nowrap
@@ -187,9 +193,6 @@ nnoremap <Leader>so :CtrlSFOpen<CR>
 " MiniBufExplorer
 " Show/hide the windows
 map <Leader>mbl :MBEToggle<cr>
-" Buffer switch
-nmap <c-l> :MBEbn<cr>
-nmap <c-k> :MBEbp<cr>
 
 " NERDTree
 " Open the tree
@@ -210,3 +213,16 @@ let tagbar_left=1
 nnoremap <Leader>tl :TagbarToggle<CR>
 let tagbar_width=32
 let g:tagbar_compact=1
+
+" Airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+" Buffer switch
+nmap <c-l> :bnext<cr>
+nmap <c-k> :bprevious<cr>
+
+" ctrlp settings
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
