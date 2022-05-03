@@ -11,6 +11,7 @@ if [ -d Vundle.vim ]; then
 else
 	git clone https://github.com/VundleVim/Vundle.vim.git 
 fi
+git clone https://github.com/tomasr/molokai
 popd
 
 # Copy .vimrc
